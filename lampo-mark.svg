@@ -1,0 +1,7 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="29" stroke="url(#g)" stroke-width="2.5"/>
+<circle cx="32" cy="32" r="29" stroke="rgba(99,221,248,0.18)" stroke-width="6"/>
+<text x="32" y="43" text-anchor="middle" font-family="Georgia,serif" font-size="30"
+ font-weight="700" fill="url(#g)">Ω</text>
+<defs><linearGradient id="g" x1="0" y1="0" x2="64" y2="64">
+<stop stop-color="#8BEAFF"/><stop offset="1" stop-color="#2EA8DF"/></linearGradient></defs></svg>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Privacy — LAMPO</title>
+<meta name="description" content="Privacy"/>
+<link rel="icon" href="lampo-mark.svg" type="image/svg+xml"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="index.html"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="29" stroke="url(#g)" stroke-width="2.5"/>
+<circle cx="32" cy="32" r="29" stroke="rgba(99,221,248,0.18)" stroke-width="6"/>
+<text x="32" y="43" text-anchor="middle" font-family="Georgia,serif" font-size="30"
+ font-weight="700" fill="url(#g)">Ω</text>
+<defs><linearGradient id="g" x1="0" y1="0" x2="64" y2="64">
+<stop stop-color="#8BEAFF"/><stop offset="1" stop-color="#2EA8DF"/></linearGradient></defs></svg> LAMPO</a>
+  <div class="links"><a href="index.html" class='active'>Home</a><a href="features.html" class='active'>Features</a><a href="download.html" class='cta active'>Download</a><a href="docs.html" class='active'>Docs</a><a href="plugins.html" class='active'>Plugins</a><a href="changelog.html" class='active'>Changelog</a><a href="roadmap.html" class='active'>Roadmap</a><a href="support.html" class='active'>Support</a></div>
+</div></nav>
+<main>
+<section><div class="wrap">
+  <p class="kicker">PRIVACY</p>
+  <h2>What leaves your machine — and what never does.</h2>
+  <div class="grid c3" style="margin-top:30px">
+    <div class="card"><h3>Stored locally</h3><p>Conversations, tool results,
+    projects, settings and history live in <code>data/</code> on your machine
+    (SQLite + JSON). Nothing is uploaded automatically.</p></div>
+    <div class="card"><h3>Sent to the model provider</h3><p>Your messages and
+    tool context go to whichever AI provider you configure — a local model
+    keeps that on your machine; cloud providers see what you send them.</p></div>
+    <div class="card"><h3>Never uploaded automatically</h3><p>Arbitrary files,
+    credentials, tokens, unrestricted tool output and system information are
+    never collected. Cloud sync, when it exists, is opt-in per conversation.</p></div>
+    <div class="card"><h3>Telemetry</h3><p>None. Lampo has no analytics or
+    telemetry in v1.0.0.</p></div>
+    <div class="card"><h3>Authentication</h3><p>Google sign-in uses a browser
+    PKCE flow — passwords are never entered in Lampo, and tokens are stored
+    encrypted with Windows DPAPI.</p></div>
+    <div class="card"><h3>Deletion</h3><p>Delete any conversation permanently
+    in History. Account data can be removed by signing out and deleting
+    <code>data/account.json</code> and <code>data/tokens.vault</code>.</p></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <span>© 2026 LAMPO — local-first AI agent</span>
+  <div class="links">
+    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+    <a href="security.html">Security</a><a href="contact.html">Contact</a>
+  </div>
+</div></footer>
+</body>
+</html>
