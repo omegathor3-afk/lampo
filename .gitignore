@@ -1,0 +1,5 @@
+# LAMPO website repo — ignore local editor/OS noise only.
+# Static site: no build artifacts, no secrets (none exist here).
+.DS_Store
+Thumbs.db
+*.swp
