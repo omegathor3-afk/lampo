@@ -20,25 +20,40 @@
   <div class="links"><a href="index.html" class='active'>Home</a><a href="features.html" class='active'>Features</a><a href="download.html" class='cta active'>Download</a><a href="docs.html" class='active'>Docs</a><a href="plugins.html" class='active'>Plugins</a><a href="changelog.html" class='active'>Changelog</a><a href="roadmap.html" class='active'>Roadmap</a><a href="support.html" class='active'>Support</a></div>
 </div></nav>
 <main>
+<section class="hero"><div class="wrap">
+  <span class="badge ok">v1.0.0 — released, public</span>
+  <h1 style="letter-spacing:6px;">Download Lampo</h1>
+  <p class="tag" style="margin-top:14px">Windows 10 / 11 (x64) — free, forever.</p>
+  <p class="sub">Local-first. Every byte of your data stays on your machine
+  (in %LOCALAPPDATA%\Lampo) unless you choose otherwise. The installer and
+  the portable build are the same application.</p>
+  <div class="btn-row">
+    <a class="btn primary" href="https://github.com/omegathor3-afk/lampo/releases/download/v1.0.0/Lampo-Setup-1.0.0.exe">Download installer (261 MB)</a>
+    <a class="btn primary" style="background:linear-gradient(180deg,#2EA8DF,#1477A8)" href="https://github.com/omegathor3-afk/lampo/releases/download/v1.0.0/Lampo-Portable-1.0.0.zip">Portable build (388 MB)</a>
+  </div>
+</div></section>
+
 <section><div class="wrap">
-  <span class="badge ok">v1.0.0 — current stable</span>
-  <h2>Download Lampo</h2>
-  <p class="lead">Windows first. Other platforms are planned — see the
-  roadmap. This page is generated from the project's release configuration;
-  a release build makes the links live.</p>
+  <p class="kicker">RELEASE</p>
+  <h2>Lampo v1.0.0</h2>
   <table>
-    <tr><th>Platform</th><th>Status</th><th>Details</th></tr>
-    <tr><td>Windows 10/11 (x64)</td><td>
-      <span class="badge warn">BUILD PENDING</span></td>
-      <td>Installer and portable build ship with v1.0.0. The PyInstaller
-      spec already bundles the LAMPO icon and agent runtime.</td></tr>
-    <tr><td>Linux</td><td><span class="badge">PLANNED</span></td><td>—</td></tr>
-    <tr><td>macOS</td><td><span class="badge">PLANNED</span></td><td>—</td></tr>
+    <tr><th>File</th><th>Size</th><th>SHA-256</th></tr>
+    <tr><td>Lampo-Setup-1.0.0.exe</td><td>261 MB</td><td><code>20ac0bde1f68678a1b23d715f9cad6d3e0eb8fef281a5087d32a155b2e925595</code></td></tr>
+    <tr><td>Lampo-Portable-1.0.0.zip</td><td>388 MB</td><td><code>6bc780cc3f0ca75079bc1258439b0e6af8cb4a5bfc912ef1ca489fd3547f952c</code></td></tr>
   </table>
-  <p style="margin-top:26px;color:var(--muted);font-size:14px">
-  Until the first packaged release is published, Lampo runs from source:
-  <code>git clone</code> → <code>pip install -r requirements.txt</code> →
-  <code>python app.py</code>. See <a href="docs.html">Documentation</a>.</p>
+  <p style="margin-top:18px;color:var(--muted);font-size:14px">
+    Full notes: <a href="https://github.com/omegathor3-afk/lampo/releases/tag/v1.0.0">the v1.0.0 release</a> ·
+    checksums: <a href="https://github.com/omegathor3-afk/lampo/releases/download/v1.0.0/SHA256SUMS.txt">SHA256SUMS.txt</a>
+  </p>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">PREREQUISITES</p>
+  <h2>Nothing to install.</h2>
+  <p class="lead">Lampo brings its own Python runtime, Qt interface and
+  llama.cpp inside the package. Drop a GGUF model in
+  <code>Models/</code> or connect Ollama, and start the agent. No development
+  tools and no accounts required.</p>
 </div></section>
 </main>
 <footer><div class="wrap">
